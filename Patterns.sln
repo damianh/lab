@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCoreNestedApps", "AspNetCoreNestedApps", "{26410619-F4ED-4C68-AAA8-A75DCC36D66C}"
+	ProjectSection(SolutionItems) = preProject
+		AspNetCoreNestedApps\README.md = AspNetCoreNestedApps\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreNestedApps", "AspNetCoreNestedApps\AspNetCoreNestedApps\AspNetCoreNestedApps.csproj", "{F74DABBD-27C9-42CD-98C0-ED5FF0F84B69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreNestedApps3", "AspNetCoreNestedApps\AspNetCoreNestedApps3\AspNetCoreNestedApps3.csproj", "{0A4824D0-BDC6-42C3-8DAF-ED62AD182CF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09DF9B12-AEDC-4068-8091-47862660B510}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F74DABBD-27C9-42CD-98C0-ED5FF0F84B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74DABBD-27C9-42CD-98C0-ED5FF0F84B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74DABBD-27C9-42CD-98C0-ED5FF0F84B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74DABBD-27C9-42CD-98C0-ED5FF0F84B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4824D0-BDC6-42C3-8DAF-ED62AD182CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4824D0-BDC6-42C3-8DAF-ED62AD182CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4824D0-BDC6-42C3-8DAF-ED62AD182CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4824D0-BDC6-42C3-8DAF-ED62AD182CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F74DABBD-27C9-42CD-98C0-ED5FF0F84B69} = {26410619-F4ED-4C68-AAA8-A75DCC36D66C}
+		{0A4824D0-BDC6-42C3-8DAF-ED62AD182CF4} = {26410619-F4ED-4C68-AAA8-A75DCC36D66C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E08AA2C-B71E-466D-9F3A-E52F37BE3895}
+	EndGlobalSection
+EndGlobal
