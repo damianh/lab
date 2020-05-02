@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\lib\uritemplate-test\extended-tests.json" Link="extended-tests.json" />
+    <EmbeddedResource Include="..\lib\uritemplate-test\negative-tests.json" Link="negative-tests.json" />
+    <EmbeddedResource Include="..\lib\uritemplate-test\spec-examples-by-section.json" Link="spec-examples-by-section.json" />
+    <EmbeddedResource Include="..\lib\uritemplate-test\spec-examples.json" Link="spec-examples.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UriTemplates\UriTemplates.csproj" />
+  </ItemGroup>
+
+</Project>
