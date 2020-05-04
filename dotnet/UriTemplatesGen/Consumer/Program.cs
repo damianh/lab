@@ -6,7 +6,7 @@ namespace Consumer
     {
         static void Main(string[] args)
         {
-            HelloWorldGenerated.HelloWorld.SayHello();
+            HelloWorldGenerated.HelloWorld.SayHello(s => Console.WriteLine(s));
         }
     }
 }

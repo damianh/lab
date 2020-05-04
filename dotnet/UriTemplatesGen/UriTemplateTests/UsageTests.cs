@@ -4,21 +4,28 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using Tavis.UriTemplates;
+using UriTemplatesLib;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace UriTemplateTests
 {
     public class UsageTests
     {
+        private readonly ITestOutputHelper _testOutputHelper;
+
+        public UsageTests(ITestOutputHelper testOutputHelper)
+        {
+            _testOutputHelper = testOutputHelper;
+        }
+
         [Fact]
         public void TestHexEscape()
         {
             for (int i = 20; i < 128; i++) {
                 Assert.Equal(Uri.HexEscape((char)i), Result.HexEscape((char)i));    
             }
-            
         }
-
         
         [Fact]
         public void ShouldAllowUriTemplateWithPathSegmentParameter()
@@ -27,8 +34,11 @@ namespace UriTemplateTests
             template.SetParameter("bar", "yo");
             var uriString = template.Resolve();
             Assert.Equal("http://example.org/foo/yo/baz", uriString);
-        }
 
+            var uriTemplate = new UriTemplate2("http://example.org/foo/{bar}/baz", s => _testOutputHelper.WriteLine(s));
+            //throw new InvalidOperationException();
+            _testOutputHelper.WriteLine("blah");
+        }
 
         [Fact]
         public void ShouldAllowUriTemplateWithMultiplePathSegmentParameter()
