@@ -4,9 +4,11 @@ namespace UriTemplatesLib
 {
     public class UriTemplate2
     {
-        public UriTemplate2(string template, Action<string> writeLine)
+        public UriTemplate2(string template)
         {
-            HelloWorldGenerated.HelloWorld.SayHello(writeLine);
+            Template = template;
         }
+
+        public string Template { get; }
     }
 }

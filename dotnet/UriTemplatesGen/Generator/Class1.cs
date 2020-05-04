@@ -14,7 +14,7 @@ namespace UriTemplatesGen
         public void Execute(SourceGeneratorContext context)
         {
             var syntaxReceiver = (SyntaxReceiver)context.SyntaxReceiver;
-            Debug.WriteLine("hell");
+            //Debug.WriteLine("hell");
             //Debugger.Launch();
             // begin creating the source we'll inject into the users compilation
             var sourceBuilder = new StringBuilder(@"
@@ -47,7 +47,6 @@ namespace HelloWorldGenerated
 }");
             // inject the created source into the users compilation
             context.AddSource("helloWorldGenerator2", SourceText.From(sourceBuilder.ToString(), Encoding.UTF8));
-            Console.WriteLine("oops");
         }
 
         public void Initialize(InitializationContext context)

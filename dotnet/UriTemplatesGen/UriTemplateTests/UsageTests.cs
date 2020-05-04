@@ -35,7 +35,7 @@ namespace UriTemplateTests
             var uriString = template.Resolve();
             Assert.Equal("http://example.org/foo/yo/baz", uriString);
 
-            var uriTemplate = new UriTemplate2("http://example.org/foo/{bar}/baz", s => _testOutputHelper.WriteLine(s));
+            var uriTemplate = new UriTemplate2("http://example.org/foo/{bar}/baz");
             //throw new InvalidOperationException();
             _testOutputHelper.WriteLine("blah");
         }
