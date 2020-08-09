@@ -1,5 +1,3 @@
 # Docker
 
-1. [build/dotnet-core-lts-sdks](build/dotnet-core-lts-sdk) - a docker image that
-   combine LTS versions of .NET Core SDKs. Used in projects that multi-target
-   .NET Core LTS versions.
+1. Build images moved to [docker-ci](https://github.com/damianh/docker-ci).
