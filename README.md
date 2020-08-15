@@ -1,6 +1,6 @@
-# Patterns
+# Lab
 
-A collection of patterns, tools and utilities I use in libraries and
+A collection of patterns, experiments, and things I use in libraries and
 applications. They exist in this mono-repository if they are not big enough to
 have their own repository and/or shipped as their own package.
 
