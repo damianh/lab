@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "AspNetCoreNestedApps": {
+    "Host": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
