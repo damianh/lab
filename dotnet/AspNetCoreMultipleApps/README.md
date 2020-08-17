@@ -4,8 +4,7 @@ Assumptions
 
 - You want to host multiple ASP.NET Core web applications in a single process but
   ensuring each web application is isolated from each other.
-- You don't want to spawn and manage multiple processes. Note: all application
-  will need to target same runtime and ASP.NET Core versions.
+- You don't want to spawn and manage multiple processes.
 
 This is a follow on from AspNetCoreNested apps that worked for ASP.NET Core 2.1.
 In that version we leveraged `StartupLoader` and `ApplicationBuilder` to
@@ -38,6 +37,7 @@ web applications more "library" like so they can be composed and hosted.
   services / etc from other web applications and register things it shouldn't
   know about.
 - Use typed settings for configuration and only use `IConfiguration` in the `MainHost`.
+- Any Security considerations.
 
 ## Implementation Notes
 
@@ -54,8 +54,8 @@ web applications more "library" like so they can be composed and hosted.
 1. Each WebApplication is hosted and run as a HostedService which manages their
    lifecycle with respect to `MainHost`.
 
-1. The port numbers the WebApplication's are bind to are choose by the OS. This
-   removes any possibility of start up exceptions attempting to bind to used
+1. The port numbers the WebApplication's are bind to are choosen by the OS. This
+   removes any possibility of start up exceptions attempting to bind to a used
    port number. Since these aren't known until after the listener is running,
    `HostedServiceContext` is used to capture these values which is then
    subsequently used in the proxy.
