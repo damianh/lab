@@ -6,7 +6,7 @@ Assumptions
   ensuring each web application is isolated from each other.
 - You don't want to spawn and manage multiple processes.
 
-This is a follow on from AspNetCoreNested apps that worked for ASP.NET Core 2.1.
+This is a follow on from `AspNetCoreNestedApps` that worked for ASP.NET Core 2.1.
 In that version we leveraged `StartupLoader` and `ApplicationBuilder` to
 construct our nested applications behind a convenient `IsolatedMap` extension
 method and host multiple ASP.NET Core web applications with a single listener.
