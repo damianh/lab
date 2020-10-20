@@ -90,9 +90,10 @@ web applications more "library" like so they can be composed and hosted.
    these ports will not represent a potential issue (i.e. a 'backdoor' that
    another process can invoke).
 
-   As an additional layer of security is added in that a special header,
+   As an additional layer of security is added using a special header,
    `SharedSettings.PreSharedKeyHeader` that will contain a Pre-Shared Key
-   generated at startup, is sent to the hosted Web Applications. They then check
+   generated at startup. This is included in proxied requests forwarded to
+   the hosted Web Applications. They then check
    every incoming request for this and if missing or incorrect, they will
    simply refused to service it by calling `Abort()`.
 
