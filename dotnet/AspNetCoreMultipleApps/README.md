@@ -76,7 +76,7 @@ web applications more "library" like so they can be composed and hosted.
    project directory which will exist with `dotnet run` / F5. Failing that,
    it'll test for `wwwroot/_content/{WebApplication}` which will exist after
    `dotnet publish`. There are some strings hand coded here and I feel, overall,
-   that the approach is not bullet-proof (maybe I'm missing something...). If
+   that the approach is ok if not bullet-proof (maybe I'm missing something...). If
    there are improvements that can be applied here, please reach out.
 
 1. In tests, we detect if running in NCrunch and `SetContentRoot()` of the
