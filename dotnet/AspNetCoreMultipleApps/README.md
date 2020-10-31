@@ -39,6 +39,12 @@ web applications more "library" like so they can be composed and hosted.
 - Use typed settings for configuration and only use `IConfiguration` in the `MainHost`.
 - Any Security considerations.
 
+## Running
+
+```
+dotnet run -p .\MainHost\
+```
+
 ## Implementation Notes
 
 1. `MainHost` is the project that hosts is own web application as well as
