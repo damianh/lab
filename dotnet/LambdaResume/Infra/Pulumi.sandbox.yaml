@@ -1,0 +1,5 @@
+config:
+  Infra:AccountId:
+    secure: AAABAOAAaureBmfnYTVf2VIGjbGLEh3CtoKXXQ6TJWyCvJHkji+mlQKe6u0=
+  Infra:Role:
+    secure: AAABADYzjFzUhLD45SVNKsDOnjDWXvnslXdlFeCcKtzgezKzJKDCIA==

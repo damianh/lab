@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker", "Worker\Worker.csproj", "{63CBE53C-2D51-439C-9AF7-E30DA6A9042C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "Infra\Infra.csproj", "{81BA7945-3A42-4938-B789-14172EF6D089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63CBE53C-2D51-439C-9AF7-E30DA6A9042C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CBE53C-2D51-439C-9AF7-E30DA6A9042C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CBE53C-2D51-439C-9AF7-E30DA6A9042C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CBE53C-2D51-439C-9AF7-E30DA6A9042C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BA7945-3A42-4938-B789-14172EF6D089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BA7945-3A42-4938-B789-14172EF6D089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BA7945-3A42-4938-B789-14172EF6D089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BA7945-3A42-4938-B789-14172EF6D089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0BB12D2-9A33-40B7-8322-2B391212D38E}
+	EndGlobalSection
+EndGlobal
